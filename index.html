@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevUtils - Developer Tools Suite. Lightweight command-line tools for automation in machine learning and file management workflows. HFPusher, DropSync, NbClean, and DBignore.">
+    <meta name="keywords" content="developer tools, automation, command line, machine learning, file management, HFPusher, DropSync, NbClean, DBignore, Python, CLI tools">
+    <meta property="og:title" content="🛠️ DevUtils - Developer Tools Suite">
+    <meta property="og:description" content="Lightweight command-line tools for automation in machine learning and file management workflows">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🛠️ DevUtils - Developer Tools Suite">
+    <meta name="twitter:description" content="Lightweight command-line tools for automation in machine learning and file management workflows">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+    <title> DevUtils - Developer Tools Suite</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tools"></i>
+                <span>DevUtils</span>
+            </div>
+            <div class="nav-links">
+                <a href="#projects">Tools</a>
+                <a href="#getting-started">Getting Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">🛠️ DevUtils</span>
+                </h1>
+                <p class="hero-subtitle">
+                    A collection of simple automation tools for developers and data scientists
+                </p>
+                <p class="hero-description">
+                    Lightweight command-line tools that automate repetitive tasks in machine learning and file management workflows.
+                </p>
+                <a href="#projects" class="cta-button">
+                    <span>Explore Tools</span>
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-upload"></i>
+                        <span>HFPusher</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-sync"></i>
+                        <span>DropSync</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-broom"></i>
+                        <span>NbClean</span>
+                    </div>
+                    <div class="card card-4">
+                        <i class="fas fa-ban"></i>
+                        <span>DBignore</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">🚀 Projects</h2>
+            <div class="projects-grid">
+                <!-- HFPusher -->
+                <div class="project-card" data-project="hfpusher">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                        <div class="project-number">1️⃣</div>
+                    </div>
+                    <h3 class="project-title">HFPusher</h3>
+                    <p class="project-tagline">Push your ML models to Hugging Face in one command.</p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Store credentials in .env file</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Upload entire model folder</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Auto-create repos</span>
+                        </div>
+                    </div>
+                    <p class="project-perfect">Perfect for: Quickly sharing trained models without manual uploads.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/lisekarimi/hfpusher" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>View Source</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DropSync -->
+                <div class="project-card" data-project="dropsync">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <div class="project-number">2️⃣</div>
+                    </div>
+                    <h3 class="project-title">DropSync</h3>
+                    <p class="project-tagline">Automatically backup folders to Dropbox, skip the junk.</p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Set source and destination once</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Skip cache and temp files</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Schedule runs</span>
+                        </div>
+                    </div>
+                    <p class="project-perfect">Perfect for: Keeping important project files backed up without filling Dropbox with garbage.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/lisekarimi/dropsync" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>View Source</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NbClean -->
+                <div class="project-card" data-project="nbclean">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <div class="project-number">3️⃣</div>
+                    </div>
+                    <h3 class="project-title">NbClean</h3>
+                    <p class="project-tagline">Shrink Jupyter notebooks by removing outputs and metadata.</p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Clean single notebook or folder</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Remove outputs & exec counts</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Show space saved</span>
+                        </div>
+                    </div>
+                    <p class="project-perfect">Perfect for: Sharing notebooks on GitHub or with teammates without messy diffs.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/lisekarimi/nbclean" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>View Source</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DBignore -->
+                <div class="project-card" data-project="dbignore">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <div class="project-number">4️⃣</div>
+                    </div>
+                    <h3 class="project-title">DBignore</h3>
+                    <p class="project-tagline">Stop Dropbox from syncing files you want to keep local.</p>
+                    <div class="project-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Mark files as ignored</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Doesn't delete anything</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Easy undo</span>
+                        </div>
+                    </div>
+                    <p class="project-perfect">Perfect for: Keeping datasets, models, or sensitive files local without Dropbox trying to upload them.</p>
+                    <div class="project-actions">
+                        <a href="https://github.com/lisekarimi/dbignore" class="github-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>View Source</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="why">
+        <div class="container">
+            <h2 class="section-title">💡 Why These Tools?</h2>
+            <div class="why-content">
+                <div class="why-text">
+                    <p class="why-intro">Built by a data scientist who got tired of:</p>
+                    <div class="pain-points">
+                        <div class="pain-point">
+                            <i class="fas fa-times"></i>
+                            <span>Manually uploading models</span>
+                        </div>
+                        <div class="pain-point">
+                            <i class="fas fa-times"></i>
+                            <span>Dropbox syncing 50GB datasets</span>
+                        </div>
+                        <div class="pain-point">
+                            <i class="fas fa-times"></i>
+                            <span>Massive notebook files clogging git repos</span>
+                        </div>
+                        <div class="pain-point">
+                            <i class="fas fa-times"></i>
+                            <span>Repetitive file management tasks</span>
+                        </div>
+                    </div>
+                    <p class="why-solution">Simple, scriptable, and actually useful.</p>
+                </div>
+                <div class="why-visual">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">terminal</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="code-prompt">$</span>
+                                <span class="code-command">hfpusher my-model/</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-output">✓ Model uploaded to huggingface.co/models/username/my-model</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-prompt">$</span>
+                                <span class="code-command">nbclean notebook.ipynb</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-output">✓ Cleaned notebook.ipynb (saved 2.3MB)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="getting-started">
+        <div class="container">
+            <h2 class="section-title">📦 Getting Started</h2>
+            <div class="getting-started-content">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Pick Your Tool</h3>
+                            <p>Choose the tool that best fits your workflow and requirements.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Configure Once</h3>
+                            <p>Each tool has its own folder with setup instructions. Follow the README.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Forget About It</h3>
+                            <p>Set it up once and let it work in the background. Simple, scriptable, and useful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-tools"></i>
+                        <span>DevUtils</span>
+                    </div>
+                    <p class="footer-text">Simple automation tools for developers and data scientists.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/lisekarimi" class="social-btn linkedin-btn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/lisekarimi" class="social-btn github-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+
+    <!-- PageBotAI Chatbot -->
+    <script>
+        (function() {
+            var script = document.createElement("script");
+            script.src = "https://pagebotai.lisekarimi.com/static/embed.js";
+            script.onload = function() {
+                initializePageBotAI({
+                    chatbotName: 'DevUtilsBot',
+                    primaryColor: '#7b79d3',
+                    instructions: 'You are a helpful AI assistant that answers questions based on the content of the websites you can access. Be friendly, concise, and accurate in your responses.',
+                    targetUrls: ['https://devutils.lisekarimi.com'],
+                    wsUrl: 'https://pagebotai.lisekarimi.com/ws/chat'
+                });
+            };
+            document.head.appendChild(script);
+        })();
+    </script>
+    <!-- End of PageBotAI Chatbot -->
+</body>
+</html>

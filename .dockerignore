@@ -1,0 +1,35 @@
+# Exclude alerts-gcp directory
+alerts-gcp/
+
+# Exclude common development files
+.git
+.gitignore
+README.md
+*.md
+
+# Exclude Docker files
+Dockerfile
+.dockerignore
+
+# Exclude logs
+logs/
+*.log
+
+# Exclude temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exclude node_modules if any
+node_modules/
+
+# Exclude any build artifacts
+dist/
+build/
