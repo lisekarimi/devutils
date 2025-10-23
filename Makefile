@@ -24,7 +24,7 @@ run: ## Run container with hot reload (mounted volumes)
 		docker rm $(CONTAINER_NAME) || true; \
 	fi
 	docker run -d -p $(PORT):80 --name $(CONTAINER_NAME) \
-		-v "$(CURDIR):/usr/share/nginx/html" \
+		-v "$$(pwd):/usr/share/nginx/html" \
 		$(IMAGE_NAME)
 	@echo "Container started in dev mode! Visit http://localhost:$(PORT)"
 
